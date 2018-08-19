@@ -6,6 +6,10 @@
   "author": "chai_xb@163.com",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "babel-loader": "^8.0.0-beta",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
     "fork-ts-checker-webpack-plugin": "^0.4.9",

@@ -5,6 +5,6 @@ import Component from "vue-class-component"
 @Component
 export default class App extends Vue {
   render(h: CreateElement) {
-    return <div>73</div>
+    return <div id="app">73</div>
   }
 }

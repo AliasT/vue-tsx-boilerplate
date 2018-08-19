@@ -19,6 +19,18 @@ module.exports = {
       {
         test: /\.tsx?/,
         use: [
+          {
+            loader: "babel-loader",
+            options: {
+              plugins: [
+                "transform-vue-jsx",
+              ],
+            },
+          },
+
+          {
+            loader: "vue-jsx-hot-loader",
+          },
 
           {
             loader: "ts-loader",
@@ -28,9 +40,6 @@ module.exports = {
             },
           },
 
-          {
-            loader: "vue-jsx-hot-loader",
-          },
 
         ]
       },

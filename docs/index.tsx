@@ -1,8 +1,9 @@
 import Vue from "vue"
 import App from "./app"
+import "./global.scss"
 
 new Vue({
-  el: "#app",
+  el: "#root",
   render(h) {
     return <App />
   }
