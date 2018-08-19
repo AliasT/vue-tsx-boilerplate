@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const webpack = require("webpack")
 
 module.exports = {
@@ -61,6 +62,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new FriendlyErrorsWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: "docs/index.html"

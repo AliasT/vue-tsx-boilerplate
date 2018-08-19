@@ -7,9 +7,11 @@ const app = express()
 const compiler = webpack(webpackConfig)
 
 app.use(middleware(compiler, {
-
+  logLevel: 'silent',
 }))
 
-app.use(require("webpack-hot-middleware")(compiler));
+app.use(require("webpack-hot-middleware")(compiler, {
+  log: false,
+}))
 
 app.listen(3000, () => "app listening on port 3000")
