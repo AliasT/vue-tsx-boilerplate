@@ -1,10 +1,17 @@
 import Vue, { CreateElement } from "vue"
-import Component from "vue-class-component"
-// import "./app.scss"
+import * as tsx from "vue-tsx-support"
 
-@Component
-export default class App extends Vue {
+// import "./app.scss"
+const App = tsx.component({
+  props: {
+    name: {
+      default: "tsx",
+      type: String,
+    },
+  },
   render(h: CreateElement) {
-    return <div id="app">vue tsx app</div>
-  }
-}
+    return <div id="app">{this.name}</div>
+  },
+})
+
+export { App }

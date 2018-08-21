@@ -3936,10 +3936,6 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-class-component@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.2.0.tgz#7adb1daa9a868c75f30f97f33f4f1b94aee62089"
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
@@ -3951,6 +3947,10 @@ vue-jsx-hot-loader@^1.4.0:
     hash-sum "^1.0.2"
     lodash "^4.17.10"
     serialize-javascript "^1.5.0"
+
+vue-tsx-support@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vue-tsx-support/-/vue-tsx-support-2.1.1.tgz#697db1d38bad53543429e9ecdff19704b0399390"
 
 vue@^2.5.17:
   version "2.5.17"
