@@ -28,7 +28,7 @@ module.exports = {
               ],
             },
           },
-
+          // this only works with module default export
           {
             loader: "vue-jsx-hot-loader",
           },
